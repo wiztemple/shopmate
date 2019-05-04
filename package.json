@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "An e-commerce UI/UX for Turing test",
   "main": "index.js",
-    "scripts": {
-      "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "repository": "https://github.com/wiztemple/shopmate.git",
   "author": "wiztemple <wiztemple@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.4"
   }
 }
