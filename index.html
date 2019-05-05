@@ -4,9 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Shopmate</title>
 </head>
 <body>
-  <script src=""></script>
+  <div class="app">
+      <div class="header">
+        <nav class="navbar navbar-light" role="navigation" aria-label="main navigation">
+          <div class="container is-fluid mx-20">
+            <div class="navbar-brand">
+              <a href="#" class="navbar-item">
+                <span class="black fs-15 fw-700">Hi!</span> <span class="ml-5 pink fs-15 fw-700">Sign in</span>
+              </a>
+              <a href="#" class="navbar-item">
+                <span class="black fs-15 fw-700">or</span> <span class="pink fs-15 fw-700">Register</span>
+              </a>
+              <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu topnav">
+              <div class="navbar-start">
+                <a href="#" class="navbar-item">
+                  Daily deals
+                </a>
+                <a href="#" class="navbar-item">
+                  Sell
+                </a>
+                <a href="#" class="navbar-item">
+                  Help & Contact
+                </a>
+                <a href="#" class="navbar-item is-active">
+                  Shoes
+                </a>
+                <a href="#" class="navbar-item">
+                  Brands
+                </a>
+              </div>
+              <div class="navbar-end">
+                <a href="#" class="navbar-item">
+                  <img class="search-icon" src="./images/gbr.png" alt="search"> <span class="ml-10 fw-700">&#163; GBP</span>
+                </a>
+                <a href="#" class="navbar-item relative">
+                  <img class="bag-icon" src="./images/blackbag.png" alt="cart/bag"><sup class="absolute sup-pink">6</sup>
+                  <span class="ml-10">Your bag is: &#163;3.699</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar--pink" role="navigation" aria-label="main navigation">
+          <div class="container is-fluid mx-20">
+            <div class="navbar-brand navbar-brand--white">
+              <a href="index.html" class="navbar-item">
+                Shopmate
+              </a>
+              <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a href="#" class="navbar-item">
+                  Women
+                </a>
+                <a href="#" class="navbar-item">
+                  Men
+                </a>
+                <a href="#" class="navbar-item">
+                  Kids
+                </a>
+                <a href="#" class="navbar-item is-active">
+                  Shoes
+                </a>
+                <a href="#" class="navbar-item">
+                  Brands
+                </a>
+              </div>
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="field search-field">
+                    <input class="input input-search" type="text" placeholder="search anything">
+                    <img class="search-icon" src="./images/search.png" alt="search">
+                    <img class="close-icon" src="./images/close.png" alt="search">
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="navbar-item">
+                  <img class="search-icon" id="search-icon" src="./images/search.png" alt="search">
+                </a>
+                <a href="#" class="navbar-item relative clickBag">
+                  <img class="bag-icon" src="./images/bag.png" alt="cart/bag"><sup class="absolute sup-white">6</sup>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
