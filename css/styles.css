@@ -6935,6 +6935,7 @@ label.panel-block {
   box-sizing: inherit; }
 
 body {
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   background-color: #f7f7f7; }
 
@@ -6951,20 +6952,38 @@ body {
 .light-gray {
   color: #b4b4b4; }
 
+/*background-color*/
+.bg-feint__grey {
+  background-color: #f7f7f7; }
+
+.bg-white {
+  background-color: #fff !important; }
+
+.bg-mild__grey {
+  background-color: #eee !important; }
+
 /*img-fluid*/
 .img-fluid {
   width: 100%; }
+
+.img-fluid-50 {
+  width: 6.25rem;
+  height: 100%; }
 
 .img-fluid-73 {
   width: 73%;
   height: 100%; }
 
-.img-fluid-70 {
-  width: 70%;
+.img-fluid-80 {
+  width: 80%;
   height: 100%; }
 
-.img-fluid-50 {
-  width: 3.125rem;
+.img-fluid-85 {
+  width: 85%;
+  height: 100%; }
+
+.img-fluid-90 {
+  width: 90%;
   height: 100%; }
 
 /*position*/
@@ -6983,6 +7002,9 @@ body {
 
 .ml-10 {
   margin-left: 0.625rem; }
+
+.ml-12 {
+  margin-left: 0.75rem; }
 
 .ml-20 {
   margin-left: 1.25rem; }
@@ -7104,13 +7126,13 @@ body {
   border-bottom: 0; }
 
 .bb-1 {
-  border-bottom: 1px solid #777; }
+  border-bottom: 0.0625rem solid #6c6c6c; }
 
 .b-1 {
-  border: 1px solid #eee; }
+  border: 0.0625rem solid #eee; }
 
 .b-1-pink {
-  border: 1px solid #f62f5e; }
+  border: 0.0625rem solid #f62f5e; }
 
 /*flex*/
 .justify-center {
@@ -7505,10 +7527,10 @@ body {
 
 /*footer*/
 .footer {
-  background-color: #444; }
+  background-color: #2e2e2e; }
 
 .footer-item > p > a {
-  color: #2e2e2e; }
+  color: #fff; }
 
 .socials {
   margin-top: 3.125rem; }
@@ -7711,3 +7733,47 @@ sup {
     color: #fff;
     font-size: .8rem;
     font-weight: 500; } }
+
+/*details*/
+.details {
+  margin: 2rem 1.25rem 0 1.25rem;
+  padding: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2); }
+
+.output-count {
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 0.0625rem solid #f7f7f7;
+  background-color: #fff;
+  border-radius: 40%; }
+
+.value-operator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 1.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  cursor: pointer; }
+  .value-operator:hover {
+    color: #fff;
+    background-color: #f62f5e; }
+
+.emoji {
+  padding: 1px 0 0 3px;
+  width: 1.4375rem;
+  height: 1.4375rem;
+  background-color: #f7f7f7;
+  border-radius: 50%; }
+
+.review-text {
+  color: #2e2e2e; }
