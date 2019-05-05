@@ -3,11 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  background: url('../../assets/images/banner1.png');
+  height: 75vh;
+  background: url(../assets/images/banner1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:right;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 100vh;
+    background-position:right;
+  }
 }
 .banner-image {
   display: flex;
@@ -32,7 +38,17 @@
   margin: 0.75rem 0 0 0;
 }
 .categories > span > a {
-  color:$color-black;
+  color:$color-white;
   font-size: 1.25rem;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .categories > span {
+    margin: 0.2rem 0 0 0;
+  }
+  .categories > span > a {
+    color:$color-white;
+    font-size: .8rem;
+    font-weight: 500;
+  }
 }

@@ -1,0 +1,41 @@
+/*button*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+.btn-rounded {
+  border-radius: 1.875rem;
+}
+.btn-block {
+  padding: 0.625rem 1.875rem;
+}
+.btn-pink {
+  color: $color-white;
+  background-color: $color-pink;
+  box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
+}
+.btn-white {
+  color: $color-pink;
+  background-color: $color-white;
+  box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
+}
+.item-card__btn {
+  margin: 0 auto;
+  color: $color-white;
+  background-color: $color-pink;
+  border-radius: 1.25rem;
+  box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
+}
+.item-card__btn:hover, .item-card__btn:focus{
+  outline: none;
+  box-shadow:none;
+}

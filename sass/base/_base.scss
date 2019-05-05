@@ -8,11 +8,32 @@
 
 body {
   box-sizing: border-box;
+  background-color: $feint-grey;
 }
+
 /*color*/
 .pink {
   color: $color-pink;
 }
+
+/*img-fluid*/
+.img-fluid{
+  width:100%;
+}
+.img-fluid-73 {
+  width:73%;
+  height: 100%;
+}
+.img-fluid-70 {
+  width:70%;
+  height: 100%;
+}
+.img-fluid-50 {
+  width:3.125rem;
+  height: 100%;
+}
+
+
 /*position*/
 .relative {
   position: relative;
@@ -65,7 +86,7 @@ body {
   margin-top: 2.1875rem;
 }
 .mt-40 {
-  margin-top: 2.5rem;
+  margin-top: 2.5rem !important;
 }
 .mt-60 {
   margin-top: 3.75rem;
@@ -159,8 +180,9 @@ body {
   border: 1px solid #eee;
 }
 .b-1-pink {
-  border: 1px solid #f62f5e;
+  border: 1px solid $color-pink;
 }
+
 /*flex*/
 .justify-center {
   display: flex;

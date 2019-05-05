@@ -19,9 +19,7 @@
 @media screen and (max-width: 768px) {
   .navbar--pink {
     height: 3.125rem;
-  }
-  .navbar--light {
-    
+    overflow-x: hidden;
   }
 }
 
@@ -85,6 +83,7 @@
   display: none;
   width: 18.75rem;
   position: relative;
+  transition: 1s ease-in;
 }
 .search-field > .search-icon {
   position: absolute;
