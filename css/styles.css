@@ -6942,6 +6942,15 @@ body {
 .pink {
   color: #f62f5e; }
 
+.feint-grey {
+  color: #f7f7f7; }
+
+.dark-gray {
+  color: #6c6c6c; }
+
+.light-gray {
+  color: #b4b4b4; }
+
 /*img-fluid*/
 .img-fluid {
   width: 100%; }
@@ -7172,25 +7181,25 @@ body {
 
 /*font-size*/
 .fs-15 {
-  font-size: 15px; }
+  font-size: 0.9375rem; }
 
 .fs-14 {
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .fs-13 {
-  font-size: 13px; }
+  font-size: 0.8125rem; }
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 0.75rem; }
 
 .fs-10 {
-  font-size: 10px; }
+  font-size: 0.625rem; }
 
 .fs-16 {
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .fs-18 {
-  font-size: 18px; }
+  font-size: 1.125rem; }
 
 /*button*/
 .btn {
@@ -7476,6 +7485,52 @@ body {
   padding: 0.3125rem 1.25rem;
   color: #fff;
   background-color: #f62f5e; }
+
+/*explore-banner*/
+.explore-banner {
+  height: 25rem;
+  background-image: url("../assets/images/images-shoe2.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*subscription*/
+.subscription {
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  background-color: #b4b4b4; }
+
+@media screen and (max-width: 768px) {
+  .subscription {
+    padding-bottom: 2rem; } }
+
+/*footer*/
+.footer {
+  background-color: #444; }
+
+.footer-item > p > a {
+  color: #2e2e2e; }
+
+.socials {
+  margin-top: 3.125rem; }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 0.625rem;
+  background-color: #fff;
+  border-radius: 50%; }
+  .social-icons:hover {
+    background-color: rgba(46, 46, 46, 0.1); }
+
+.social-icon {
+  width: 1.875rem;
+  height: 1.875rem; }
+
+.privacy > span > a:hover {
+  color: #b4b4b4; }
 
 /*navbar styles*/
 .topnav > .navbar-start, .topnav > .navbar-end {
