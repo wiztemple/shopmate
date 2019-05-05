@@ -1,0 +1,50 @@
+/*explore-banner*/
+.explore-banner {
+  height: 25rem;
+  background-image: url('../assets/images/images-shoe2.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*subscription*/
+.subscription {
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  background-color: $color-light-grey;
+}
+@media screen and (max-width: 768px) {
+  .subscription {
+    padding-bottom: 2rem;
+  }
+}
+
+/*footer*/
+.footer {
+  background-color: #444;
+}
+.footer-item > p > a {
+  color: $color-black;
+}
+.socials {
+  margin-top: 3.125rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 0.625rem;
+  background-color: $color-white;
+  border-radius: 50%;
+  &:hover {
+    background-color: rgba($color-black,0.1);
+  }
+}
+.social-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.privacy > span > a:hover {
+  color: $color-light-grey;
+}
