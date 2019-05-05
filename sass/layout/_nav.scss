@@ -16,6 +16,14 @@
     font-weight: $fw-700;
   }
 }
+@media screen and (max-width: 768px) {
+  .navbar--pink {
+    height: 3.125rem;
+  }
+  .navbar--light {
+    
+  }
+}
 
 .navbar .navbar-brand--white > a.navbar-item:hover, .navbar .navbar-brand--white > a.navbar-item.is-active,
 .navbar .navbar--pink .navbar-link:hover,

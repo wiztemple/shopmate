@@ -1,0 +1,38 @@
+/*banner*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: url('../../assets/images/banner1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right;
+}
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url('../images/images');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right;
+}
+.banner-desc > h1 {
+  line-height: 1.6;
+}
+
+/*categories*/
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.categories > span {
+  margin: 0.75rem 0 0 0;
+}
+.categories > span > a {
+  color:$color-black;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
