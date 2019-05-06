@@ -1,0 +1,21 @@
+/*cart*/
+.cart {
+  display: none;
+  width: 60%;
+  position: absolute;
+  top: 7.625rem;
+  right: 1.25rem;
+  background-color: $color-white;
+  box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
+  z-index: 1;
+}
+.cart-footer {
+  padding: 0.625rem 3.125rem 0.625rem 3.125rem;
+  background-color: $feint-grey;
+}
+.remove-item {
+  cursor: pointer;
+}
+.remove-item:hover {
+  color: $color-light-grey;
+}
