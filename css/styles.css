@@ -7777,3 +7777,24 @@ sup {
 
 .review-text {
   color: #2e2e2e; }
+
+/*cart*/
+.cart {
+  display: none;
+  width: 60%;
+  position: absolute;
+  top: 7.625rem;
+  right: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2);
+  z-index: 1; }
+
+.cart-footer {
+  padding: 0.625rem 3.125rem 0.625rem 3.125rem;
+  background-color: #f7f7f7; }
+
+.remove-item {
+  cursor: pointer; }
+
+.remove-item:hover {
+  color: #b4b4b4; }
