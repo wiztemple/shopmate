@@ -6937,7 +6937,37 @@ label.panel-block {
 body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  line-height: 1.6; }
+
+/*font-weight*/
+.fw-700 {
+  font-weight: 700; }
+
+/*font-size*/
+.fs-15 {
+  font-size: 0.9375rem; }
+
+.fs-14 {
+  font-size: 0.875rem; }
+
+.fs-13 {
+  font-size: 0.8125rem; }
+
+.fs-12 {
+  font-size: 0.75rem; }
+
+.fs-10 {
+  font-size: 0.625rem; }
+
+.fs-16 {
+  font-size: 1rem; }
+
+.fs-18 {
+  font-size: 1.125rem; }
+
+.fs-24 {
+  font-size: 1.125rem; }
 
 /*color*/
 .pink {
@@ -7079,6 +7109,9 @@ body {
 .px-20 {
   padding: 0 1.25rem 0 1.25rem; }
 
+.px-40 {
+  padding: 0 2.5rem 0 2.5rem; }
+
 .pt-20 {
   padding-top: 1.25rem; }
 
@@ -7196,32 +7229,6 @@ body {
 
 .w-340 {
   width: 340px; }
-
-/*font-weight*/
-.fw-700 {
-  font-weight: 700; }
-
-/*font-size*/
-.fs-15 {
-  font-size: 0.9375rem; }
-
-.fs-14 {
-  font-size: 0.875rem; }
-
-.fs-13 {
-  font-size: 0.8125rem; }
-
-.fs-12 {
-  font-size: 0.75rem; }
-
-.fs-10 {
-  font-size: 0.625rem; }
-
-.fs-16 {
-  font-size: 1rem; }
-
-.fs-18 {
-  font-size: 1.125rem; }
 
 /*button*/
 .btn {
@@ -7741,10 +7748,20 @@ sup {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background: url(../assets/images/images-woman1.png);
+  background-image: url(../assets/images/images-woman1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right; }
+
+.banner3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url(../assets/images/images-model1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .banner-desc > h1 {
   line-height: 1.6; }
@@ -7834,3 +7851,25 @@ sup {
 
 .remove-item:hover {
   color: #b4b4b4; }
+
+/*blog tags*/
+.blog-tag {
+  padding: 0.5rem 0.9375rem 0.5rem 0.9375rem;
+  color: #2e2e2e;
+  background-color: #eee; }
+
+.orange-tag {
+  color: #fff;
+  background-color: #f74420; }
+
+.hero-section__header {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center; }
+
+.hero-section__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center; }
