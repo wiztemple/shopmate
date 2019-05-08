@@ -7027,6 +7027,10 @@ body {
 .mx-20 {
   margin: 0 1.25rem 0 1.25rem !important; }
 
+@media screen and (max-width: 768px) {
+  .mx-20 {
+    margin-left: 0 !important; } }
+
 .ml-5 {
   margin-left: 0.3125rem; }
 
@@ -7229,6 +7233,10 @@ body {
 
 .w-340 {
   width: 340px; }
+
+/*line-height*/
+.l-150 {
+  line-height: 150%; }
 
 /*button*/
 .btn {
@@ -7741,7 +7749,9 @@ sup {
 @media screen and (max-width: 768px) {
   .banner {
     height: 100vh;
-    background-position: right; } }
+    background-position: right; }
+  .banner-desc {
+    padding: 0 0.9375rem 0 0.9375rem; } }
 
 .banner-image {
   display: flex;
