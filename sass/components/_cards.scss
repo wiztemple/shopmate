@@ -221,7 +221,7 @@
   box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
 
   &:hover {
-    box-shadow:0 0.125rem 0.375rem 0 rgba($color-black,0.2);
+     box-shadow: 0 0.875rem 1.75rem rgba($color-black,0.25), 0 0.625rem 0.625rem rgba($color-black,0.22);;
   }
 
   &__image {

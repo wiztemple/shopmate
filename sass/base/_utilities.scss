@@ -56,9 +56,23 @@
   position: absolute;
 }
 
+/*display*/
+.target {
+  display: none;
+}
+/*cursor*/
+.pointer {
+  cursor: pointer;
+}
+.block {
+  display: block;
+}
 /*margin*/
 .mx-20 {
   margin: 0 1.25rem 0 1.25rem !important;
+}
+.m-20 {
+  margin: 1.25rem;
 }
 @media screen and (max-width: 768px) {
   .mx-20 {
