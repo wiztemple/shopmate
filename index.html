@@ -15,10 +15,10 @@
       <nav class="navbar navbar--light" role="navigation" aria-label="main navigation">
         <div class="container is-fluid mx-20">
           <div class="navbar-brand">
-            <a href="#" class="navbar-item">
+            <a href="#" class="navbar-item signinLink target-js">
               <span class="black fs-15 fw-700">Hi!</span> <span class="ml-5 pink fs-15 fw-700">Sign in</span>
             </a>
-            <a href="#" class="navbar-item">
+            <a href="#" class="navbar-item authLink target-js">
               <span class="black fs-15 fw-700">or</span> <span class="pink fs-15 fw-700">Register</span>
             </a>
             <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -49,7 +49,7 @@
               <a href="#" class="navbar-item">
                 <img class="search-icon" src="./assets/images/gbr.png" alt="search"> <span class="ml-10 fw-700">&#163; GBP</span>
               </a>
-              <a href="#" class="navbar-item relative">
+              <a href="#" class="navbar-item relative cartIcon">
                 <img class="bag-icon" src="./assets/images/blackbag.png" alt="cart/bag"><sup class="absolute sup-pink">6</sup>
                 <span class="ml-10">Your bag is: &#163;3.699</span>
               </a>
@@ -89,17 +89,17 @@
             </div>
             <div class="navbar-end">
               <div class="navbar-item">
-                <div class="field search-field">
+                <div class="field search-field target-js">
                   <input class="input input-search" type="text" placeholder="search anything">
                   <img class="search-icon" src="./assets/images/search.png" alt="search">
-                  <img class="close-icon" src="./assets/images/close.png" alt="search">
+                  <img class="close-icon closeIcon" src="./assets/images/close.png" alt="search">
                   </span>
                 </div>
               </div>
               <a href="#" class="navbar-item">
                 <img class="search-icon" id="search-icon" src="./assets/images/search.png" alt="search">
               </a>
-              <a href="#" class="navbar-item relative clickBag">
+              <a href="#" class="navbar-item relative toggle cartIcon">
                 <img class="bag-icon" src="./assets/images/bag.png" alt="cart/bag"><sup class="absolute sup-white">6</sup>
               </a>
             </div>
@@ -107,13 +107,13 @@
         </div>
       </nav>
     </div>
-    <div class="cart">
+    <div class="cart target-js">
       <div class="columns">
         <div class="column pd-50">
           <div class="space-between">
             <h1 class="title is-5">4 Items In Your Cart</h1>
             <div class="relative">
-              <span class="closeCart">X</span>
+              <span class="closeCart closeIcon pointer fs-24">&#9587;</span>
             </div>
           </div>
           <div class="cart-table">
@@ -277,35 +277,35 @@
                 <div class="justify-center">
                   <div class="space-start">
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
+                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked="">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
+                      <input type="radio" class="custom-control-input" name="example-inline-radios">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
+                      <input type="radio" class="custom-control-input" name="example-inline-radios" disabled checked>
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
+                      <input type="radio" class="custom-control-input" name="example-inline-radios" disabled>
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="">
+                      <input type="radio" class="custom-control-input" name="example-inline-radios">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="">
+                      <input type="radio" class="custom-control-input" name="example-inline-radios">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="" checked>
+                      <input type="radio" class="custom-control-input" name="example-inline-radios">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="">
+                      <input type="radio" class="custom-control-input" name="example-inline-radios">
                       <span class="custom-control-label"></span>
                     </label>
                     <label class="custom-control custom-radio custom-control-inline">
@@ -321,23 +321,23 @@
                 <h1 class="fw-700 dark-gray pl-20 mt-20 pb-20">Size</h1>
                 <div class="selectgroup selectgroup-squares pl-20 pb-10">
                   <label class="selectgroup-item">
-                    <input type="checkbox" name="value" value="XS" class="selectgroup-input">
+                    <input type="radio" name="value" value="XS" class="selectgroup-input">
                     <span class="selectgroup-button">XS</span>
                   </label>
                   <label class="selectgroup-item">
-                    <input type="checkbox" name="value" value="S" class="selectgroup-input">
+                    <input type="radio" name="value" value="s" class="selectgroup-input" checked="">
                     <span class="selectgroup-button">S</span>
                   </label>
                   <label class="selectgroup-item">
-                    <input type="checkbox" name="value" value="M" class="selectgroup-input">
+                    <input type="radio" name="value" value="M" class="selectgroup-input">
                     <span class="selectgroup-button">M</span>
                   </label>
                   <label class="selectgroup-item">
-                    <input type="checkbox" name="value" value="L" class="selectgroup-input">
+                    <input type="radio" name="value" value="L" class="selectgroup-input">
                     <span class="selectgroup-button">L</span>
                   </label>
                   <label class="selectgroup-item">
-                    <input type="checkbox" name="value" value="XL" class="selectgroup-input">
+                    <input type="radio" name="value" value="XL" class="selectgroup-input">
                     <span class="selectgroup-button">XL</span>
                   </label>
                 </div>
@@ -694,7 +694,82 @@
         </div>
       </div>
     </section>
+    <div class="authModal signin target-js">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn closeIcon">&times;</span>
+          <h2 class="title is-5">Log in</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input is-medium" type="email" placeholder="your email">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input is-medium" type="password" placeholder="password">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--end modal body-->
+        <div class="modal-footer">
+          <button class="btn btn-block btn-rounded btn-pink m-20">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="authModal signup target-js">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn closeIcon">&times;</span>
+          <h2 class="title is-5">Create Account</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input is-medium" type="text" placeholder="your name">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input is-medium" type="email" placeholder="your email">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input is-medium" type="password" placeholder="password">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  I agree to the <a href="#">terms and conditions</a>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--end modal body-->
+        <div class="modal-footer">
+          <button class="btn btn-block btn-rounded btn-pink m-20">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

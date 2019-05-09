@@ -51,7 +51,7 @@
               <a href="#" class="navbar-item">
                 <img class="search-icon" src="./assets/images/gbr.png" alt="search"> <span class="ml-10 fw-700">&#163; GBP</span>
               </a>
-              <a href="#" class="navbar-item relative">
+              <a href="#" class="navbar-item relative cartIcon">
                 <img class="bag-icon" src="./assets/images/blackbag.png" alt="cart/bag"><sup class="absolute sup-pink">6</sup>
                 <span class="ml-10">Your bag is: &#163;3.699</span>
               </a>
@@ -92,17 +92,17 @@
             </div>
             <div class="navbar-end">
               <div class="navbar-item">
-                <div class="field search-field">
+                <div class="field search-field target-js">
                   <input class="input input-search" type="text" placeholder="search anything">
                   <img class="search-icon" src="./assets/images/search.png" alt="search">
-                  <img class="close-icon" src="./assets/images/close.png" alt="search">
+                  <img class="close-icon closeIcon" src="./assets/images/close.png" alt="search">
                   </span>
                 </div>
               </div>
               <a href="#" class="navbar-item">
                 <img class="search-icon" id="search-icon" src="./assets/images/search.png" alt="search">
               </a>
-              <a href="#" class="navbar-item relative clickBag">
+              <a href="#" class="navbar-item relative cartIcon">
                 <img class="bag-icon" src="./assets/images/bag.png" alt="cart/bag"><sup class="absolute sup-white">6</sup>
               </a>
             </div>
@@ -110,25 +110,138 @@
         </div>
       </nav>
     </div>
+    <div class="cart target-js">
+      <div class="columns">
+        <div class="column pd-50">
+          <div class="space-between">
+            <h1 class="title is-5">4 Items In Your Cart</h1>
+            <div class="relative">
+              <span class="closeCart closeIcon pointer fs-24">&#9587;</span>
+            </div>
+          </div>
+          <div class="cart-table">
+            <table class="table table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Size</th>
+                  <th class="pl-10">Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;34.99</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;60</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;30</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="space-between">
+          <a href="index.html" class="btn btn-block btn-white btn-rounded">Back to Shop</a>
+          <button class="btn btn-block btn-pink btn-rounded">Checkout</button>
+        </div>
+      </div>
+    </div>
     <section class="section details">
       <div class="container">
         <div class="columns">
           <div class="column is-6">
             <div class="current-item">
-              <img class="img-fluid-85" src="./assets/images/images-shirt13.png" alt="shirt">
+              <img class="img-fluid-85" id="image-container" src="./assets/images/images-shirt13.png" alt="shirt">
               <div>
                 <div class="justify-center">
                   <div class="ml-5">
-                    <img class="img-fluid-50 b-1-pink" src="./assets/images/images-shirt13.png" alt="shirt">
+                    <img onclick="changeImage(this)" class="img-fluid-50 b-1-pink" src="./assets/images/images-shirt13.png" alt="shirt">
                   </div>
                   <div class="ml-5">
-                    <img class="img-fluid-50" src="./assets/images/images-shirt13.png" alt="shirt">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt9.png" alt="shirt">
                   </div>
                   <div class="ml-5">
-                    <img class="img-fluid-50" src="./assets/images/images-shirt13.png" alt="shirt">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt5.png" alt="shirt">
                   </div>
                   <div class="ml-5">
-                    <img class="img-fluid-50" src="./assets/images/images-shirt13.png" alt="shirt">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt13.png" alt="shirt">
                   </div>
                 </div>
               </div>
@@ -179,23 +292,23 @@
             </div>
             <div class="selectgroup selectgroup-squares pb-10">
               <label class="selectgroup-item">
-                <input type="checkbox" name="value" value="XS" class="selectgroup-input">
+                <input type="radio" name="value" value="XS" class="selectgroup-input">
                 <span class="selectgroup-button">XS</span>
               </label>
               <label class="selectgroup-item">
-                <input type="checkbox" name="value" value="S" class="selectgroup-input">
+                <input type="radio" name="value" value="S" class="selectgroup-input">
                 <span class="selectgroup-button">S</span>
               </label>
               <label class="selectgroup-item">
-                <input type="checkbox" name="value" value="M" class="selectgroup-input">
+                <input type="radio" name="value" value="M" class="selectgroup-input">
                 <span class="selectgroup-button">M</span>
               </label>
               <label class="selectgroup-item">
-                <input type="checkbox" name="value" value="L" class="selectgroup-input">
+                <input type="radio" name="value" value="L" class="selectgroup-input" checked="">
                 <span class="selectgroup-button">L</span>
               </label>
               <label class="selectgroup-item">
-                <input type="checkbox" name="value" value="XL" class="selectgroup-input">
+                <input type="radio" name="value" value="XL" class="selectgroup-input">
                 <span class="selectgroup-button">XL</span>
               </label>
             </div>
@@ -207,7 +320,7 @@
             </div>
             <div class="space-between mt-40">
               <button class="btn btn-pink btn-block btn-rounded">Add to cart</button>
-              <span class="pink mt-10">
+              <span class="pink mt-10 pointer">
                 <img src="./assets/images/heart.png" class="heart-icon-small" alt="heart">
                 Add to Wish List
               </span>
@@ -243,11 +356,11 @@
                   voluptate corporis.</p>
                 <div class="flex-start mt-10">
                   <div class="likes flex-start">
-                    <div class="emoji">&#128155;</div>
+                    <div class="emoji pointer">&#128155;</div>
                     <div class="ml-5">112</div>
                   </div>
                   <div class="ml-30 comment-count flex-start">
-                    <div class="emoji">&#128172;</div>
+                    <div class="emoji pointer">&#128172;</div>
                     <div class="ml-5">113</div>
                   </div>
                 </div>
@@ -291,7 +404,7 @@
                     <label class="label pr-40">Overall rating</label>
                   </div>
                   <div class="field-body">
-                    <div class="ratings flex-start mt-5">
+                    <div class="ratings flex-start mt-5 pointer">
                       <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
                       <span>&#9734;</span>
                     </div>
@@ -301,7 +414,7 @@
                   <div class="field-label"></div>
                   <div class="field-body">
                     <div class="field">
-                      <div class="control">
+                      <div class="control pointer">
                         <button class="btn btn-block btn-pink btn-rounded">
                           Send message
                         </button>

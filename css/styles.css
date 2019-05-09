@@ -7023,9 +7023,23 @@ body {
 .absolute {
   position: absolute; }
 
+/*display*/
+.target {
+  display: none; }
+
+/*cursor*/
+.pointer {
+  cursor: pointer; }
+
+.block {
+  display: block; }
+
 /*margin*/
 .mx-20 {
   margin: 0 1.25rem 0 1.25rem !important; }
+
+.m-20 {
+  margin: 1.25rem; }
 
 @media screen and (max-width: 768px) {
   .mx-20 {
@@ -7464,6 +7478,20 @@ body {
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(70, 127, 207, 0.5); }
 
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #1991eb; }
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #d4e1f4;
+  border-color: #d4e1f4; }
+
+.custom-control-input:disabled ~ .custom-control-label {
+  color: #868e96; }
+
+.custom-control-input:disabled ~ .custom-control-label::before {
+  background-color: #f8f9fa; }
+
 /*cards*/
 .item-card {
   position: relative;
@@ -7475,7 +7503,7 @@ body {
   background-color: #fff;
   box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2); }
   .item-card:hover {
-    box-shadow: 0 0.125rem 0.375rem 0 rgba(46, 46, 46, 0.2); }
+    box-shadow: 0 0.875rem 1.75rem rgba(46, 46, 46, 0.25), 0 0.625rem 0.625rem rgba(46, 46, 46, 0.22); }
   .item-card__image {
     display: flex;
     justify-content: center; }
@@ -7604,6 +7632,54 @@ body {
 
 .privacy > span > a:hover {
   color: #b4b4b4; }
+
+.authModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(46, 46, 46, 0.7); }
+
+.modal-header {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px; }
+
+.modal-header > span {
+  position: absolute;
+  top: 5px;
+  right: 10px; }
+
+.modal-header > h2 {
+  padding-left: .625rem;
+  color: #2e2e2e;
+  font-weight: 400; }
+
+.modal-content {
+  border-radius: 0.625rem;
+  background-color: #fff;
+  width: 30%;
+  margin-top: 9.375rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(46, 46, 46, 0.2);
+  animation-name: modalopen;
+  animation-duration: 1s; }
+
+.modal-body {
+  padding: 1.25rem; }
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 1.875rem; }
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #2e2e2e;
+  text-decoration: none;
+  cursor: pointer; }
 
 /*navbar styles*/
 .topnav > .navbar-start, .topnav > .navbar-end {
@@ -7851,6 +7927,14 @@ sup {
   background-color: #fff;
   box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2);
   z-index: 1; }
+
+@media screen and (max-width: 768px) {
+  .cart {
+    width: 100%;
+    top: 24.625rem;
+    right: 0;
+    left: 0;
+    overflow-x: scroll; } }
 
 .cart-footer {
   padding: 0.625rem 3.125rem 0.625rem 3.125rem;

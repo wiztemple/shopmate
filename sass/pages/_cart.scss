@@ -9,6 +9,15 @@
   box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .cart {
+    width: 100%;
+    top: 24.625rem;
+    right: 0;
+    left: 0;
+    overflow-x: scroll;
+  }
+}
 .cart-footer {
   padding: 0.625rem 3.125rem 0.625rem 3.125rem;
   background-color: $feint-grey;
