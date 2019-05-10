@@ -16,10 +16,10 @@
       <nav class="navbar navbar--light" role="navigation" aria-label="main navigation">
         <div class="container is-fluid mx-20">
           <div class="navbar-brand">
-            <a href="#" class="navbar-item">
+            <a href="#" class="navbar-item signinLink target-js">
               <span class="black fs-15 fw-700">Hi!</span> <span class="ml-5 pink fs-15 fw-700">Sign in</span>
             </a>
-            <a href="#" class="navbar-item">
+            <a href="#" class="navbar-item authLink target-js">
               <span class="black fs-15 fw-700">or</span> <span class="pink fs-15 fw-700">Register</span>
             </a>
             <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -503,23 +503,44 @@
             <h2 class="item-card__title">Men's knitwear offer</h2>
             <span class="justify-center">&#163;14.99</span>
             <div class="justify-center">
-              <div class="space-start ml-40">
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="example-inline-radios" value="option1" checked>
-                  <span class="custom-control-label"></span>
-                </label>
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="example-inline-radios" value="option1" checked>
-                  <span class="custom-control-label"></span>
-                </label>
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="example-inline-radios" value="option1" checked>
-                  <span class="custom-control-label"></span>
-                </label>
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" name="example-inline-radios" value="option1" checked>
-                  <span class="custom-control-label"></span>
-                </label>
+              <div class="space-start ml-10 mt-10">
+                <div class="custom-radios">
+                  <div class="inline-block">
+                    <input type="radio" id="red" name="color" value="red" checked>
+                    <label for="red">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="purple" name="color" value="purple">
+                    <label for="purple">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="green2" name="color" value="green2">
+                    <label for="green2">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="green1" name="color" value="green1">
+                    <label for="green1">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -543,23 +564,44 @@
               <h2 class="item-card__title">Men's knitwear offer</h2>
               <span class="item-card__price mt-10">&#163;14.99</span>
               <div class="justify-center mt-20">
-                <div class="space-start ml-30">
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
-                    <span class="custom-control-label"></span>
-                  </label>
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
-                    <span class="custom-control-label"></span>
-                  </label>
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
-                    <span class="custom-control-label"></span>
-                  </label>
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" name="example-inline-radios" checked>
-                    <span class="custom-control-label"></span>
-                  </label>
+                <div class="space-start ml-10">
+                  <div class="custom-radios">
+                    <div class="inline-block">
+                      <input type="radio" id="red" name="color" value="red" checked>
+                      <label for="red">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="purple" name="color" value="purple">
+                      <label for="purple">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="green2" name="color" value="green2">
+                      <label for="green2">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="green1" name="color" value="green1">
+                      <label for="green1">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="justify-content mt-40">
@@ -633,6 +675,80 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="authModal signin target-js">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="closeBtn closeIcon">&times;</span>
+        <h2 class="title is-5">Log in</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input is-medium" type="email" placeholder="your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input is-medium" type="password" placeholder="password">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end modal body-->
+      <div class="modal-footer">
+        <button class="btn btn-block btn-rounded btn-pink m-20">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="authModal signup target-js">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="closeBtn closeIcon">&times;</span>
+        <h2 class="title is-5">Create Account</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input is-medium" type="text" placeholder="your name">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input is-medium" type="email" placeholder="your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input is-medium" type="password" placeholder="password">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end modal body-->
+      <div class="modal-footer">
+        <button class="btn btn-block btn-rounded btn-pink m-20">
+          Sign Up
+        </button>
+      </div>
+    </div>
   </div>
   <script src="./js/main.js"></script>
 </body>

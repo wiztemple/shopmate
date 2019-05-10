@@ -23,6 +23,11 @@ shopmate is an e-commerce store for clothes. shomate specializes in dresses, ski
 * to view the details page, click on the ``details.html`` file in the shopmate folder
 * hover on each item card on the home page to view a  little transition
 
+## Snapshots
+![home](./assets/images/gif1.gif)
+
+![home](./assets/images/gif3.gif)
+
 ### Built with
 * [Bulma](bulma.io)
 * [Saas](https://sass-lang.com/)

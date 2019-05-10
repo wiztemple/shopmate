@@ -7075,8 +7075,14 @@ body {
 .ml-70 {
   margin-left: 4.375rem; }
 
+.mr-5 {
+  margin-right: 0.3125rem; }
+
 .mr-20 {
   margin-right: 1.25rem; }
+
+.mr-25 {
+  margin-right: 1.5625rem; }
 
 .mt-5 {
   margin-top: 0.3125rem; }
@@ -7659,7 +7665,8 @@ body {
   background-color: #fff;
   border-radius: 50%; }
   .social-icons:hover {
-    background-color: rgba(46, 46, 46, 0.1); }
+    transform: rotate(30deg);
+    transition: transform .3s ease-in; }
 
 .social-icon {
   width: 1.875rem;

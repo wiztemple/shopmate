@@ -41,7 +41,9 @@
   background-color: $color-white;
   border-radius: 50%;
   &:hover {
-    background-color: rgba($color-black,0.1);
+    // background-color: rgba($color-black,0.01);
+    transform: rotate(30deg);
+    transition: transform .3s ease-in;
   }
 }
 .social-icon {
