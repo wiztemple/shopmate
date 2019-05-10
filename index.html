@@ -276,50 +276,70 @@
                 <h1 class="fw-700 dark-gray pl-20 pb-10 pt-20">Color</h1>
                 <div class="justify-center">
                   <div class="space-start">
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" checked="">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" disabled checked>
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios">
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="" checked>
-                      <span class="custom-control-label"></span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" class="custom-control-input" name="example-inline-radios" value="">
-                      <span class="custom-control-label"></span>
-                    </label>
+                    <div class="custom-radios">
+                      <div class="inline-block">
+                        <input type="radio" id="red" name="color" value="red" checked>
+                        <label for="red">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+                    
+                      <div class="inline-block">
+                        <input type="radio" id="purple" name="color" value="purple">
+                        <label for="purple">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+                    
+                      <div class="inline-block">
+                        <input type="radio" id="green2" name="color" value="green2">
+                        <label for="green2">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="inline-block">
+                        <input type="radio" id="yellow" name="color" value="yellow">
+                        <label for="yellow">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="inline-block">
+                        <input type="radio" id="blue" name="color" value="blue">
+                        <label for="blue">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+                    
+                      <div class="inline-block">
+                        <input type="radio" id="pink" name="color" value="pink">
+                        <label for="pink">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="inline-block">
+                        <input type="radio" id="green1" name="color" value="green1">
+                        <label for="green1">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                          </span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <h1 class="fw-700 dark-gray pl-20 mt-20 pb-20">Size</h1>
@@ -392,7 +412,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <div class="item-card__image">
                     <img class="img-fluid-73" src="./assets/images/images-shirt5.png" alt="shirt">
@@ -407,7 +427,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <div class="item-card__image">
                     <img class="img-fluid-73" src="./assets/images/images-shirt5.png" alt="shirt">
@@ -422,7 +442,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <h2 class="item-card__title">Men's knitwear offer</h2>
                   <div class="item-card__image">
@@ -437,7 +457,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <div class="item-card__image">
                     <img class="img-fluid-73" src="./assets/images/images-shirt8.png" alt="shirt">
@@ -453,7 +473,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <div class="item-card__image">
                     <img class="img-fluid-73" src="./assets/images/images-shirt9.png" alt="shirt">
@@ -468,7 +488,7 @@
                 <div class="item-card">
                   <div class="card-overlay">
                     <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                    <button class="btn item-card__btn mt-40">Quick View</button>
+                    <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
                   </div>
                   <div class="item-card__image">
                     <img class="img-fluid-73" src="./assets/images/images-shirt9.png" alt="shirt">
@@ -505,7 +525,7 @@
             <div class="item-card">
               <div class="card-overlay">
                 <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                <button class="btn item-card__btn mt-40">Quick View</button>
+                <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
               </div>
               <div class="item-card__image">
                 <img class="img-fluid-73" src="./assets/images/images-shirt5.png" alt="shirt">
@@ -568,7 +588,7 @@
             <div class="item-card">
               <div class="card-overlay">
                 <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                <button class="btn item-card__btn mt-40">Quick View</button>
+                <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
               </div>
               <h2 class="item-card__title">Men's knitwear offer</h2>
               <div class="item-card__image">
@@ -581,7 +601,7 @@
             <div class="item-card">
               <div class="card-overlay">
                 <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
-                <button class="btn item-card__btn mt-40">Quick View</button>
+                <a href="details.html" class="btn item-card__btn mt-40">Quick View</a>
               </div>
               <div class="item-card__image">
                 <img class="img-fluid-73" src="./assets/images/images-shirt9.png" alt="shirt">
