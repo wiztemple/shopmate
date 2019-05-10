@@ -209,6 +209,21 @@
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(70, 127, 207, 0.5);
 }
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #1991eb;
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #d4e1f4;
+  border-color: #d4e1f4;
+}
+.custom-control-input:disabled ~ .custom-control-label {
+  color: #868e96;
+}
+.custom-control-input:disabled ~ .custom-control-label::before {
+  background-color: #f8f9fa;
+}
 /*cards*/
 .item-card {
   position: relative;

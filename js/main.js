@@ -8,6 +8,14 @@ const closeIcons = document.querySelectorAll('.closeIcon');
 const cart = document.querySelector('.cart');
 const cartIcons = document.querySelectorAll('.cartIcon');
 
+
+$("button").on("click", function() {
+  $(this).closest(".card-overlay").find("img").clone().addClass("zoom").appendTo("body");
+  setTimeout(function () {
+    $(".zoom").remove()
+  }, 1000)
+});
+
 /**
  * Display the signup form
  *
