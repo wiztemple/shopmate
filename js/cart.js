@@ -14,3 +14,5 @@ $("button").on("click", function () {
     $(".zoom").remove()
   }, 1000)
 });
+})
+
