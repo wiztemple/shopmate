@@ -1,0 +1,67 @@
+/*banner*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background: url(../assets/images/banner1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 100vh;
+    background-position:right;
+  }
+  .banner-desc {
+    padding: 0 0.9375rem 0 0.9375rem;
+  }
+}
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url(../assets/images/images-woman1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right;
+}
+.banner3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url(../assets/images/images-model1.png);
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.banner-desc > h1 {
+  line-height: 1.6;
+}
+
+/*categories*/
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.categories > span {
+  margin: 0.75rem 0 0 0;
+}
+.categories > span > a {
+  color:$color-white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .categories > span {
+    margin: 0.2rem 0 0 0;
+  }
+  .categories > span > a {
+    color:$color-white;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+}

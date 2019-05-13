@@ -1,0 +1,22 @@
+/*blog tags*/
+.blog-tag {
+  padding: 0.5rem 0.9375rem 0.5rem 0.9375rem;
+  color: $color-black;
+  background-color: $color-mild-grey;
+}
+.orange-tag {
+  color: $color-white;
+  background-color: $orange-red;
+}
+.hero-section__header {
+  font-family: $family-playfair;
+  font-size: 3rem;
+  font-weight: $fw-700;
+  line-height: 150%;
+  text-align: center;
+}
+.hero-section__subtitle {
+  font-family: $family-sans-serif;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Shopmate</title>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <nav class="navbar navbar--light" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid mx-20">
+          <div class="navbar-brand">
+            <a href="#" class="navbar-item signinLink target-js">
+              <span class="black fs-15 fw-700">Hi!</span> <span class="ml-5 pink fs-15 fw-700">Sign in</span>
+            </a>
+            <a href="#" class="navbar-item authLink target-js">
+              <span class="black fs-15 fw-700">or</span> <span class="pink fs-15 fw-700">Register</span>
+            </a>
+            <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+              data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu topnav" id="navMenu">
+            <div class="navbar-start">
+              <a href="#" class="navbar-item">
+                Daily deals
+              </a>
+              <a href="#" class="navbar-item">
+                Sell
+              </a>
+              <a href="#" class="navbar-item">
+                Help & Contact
+              </a>
+              <a href="#" class="navbar-item is-active">
+                Shoes
+              </a>
+              <a href="#" class="navbar-item">
+                Brands
+              </a>
+            </div>
+            <div class="navbar-end">
+              <a href="#" class="navbar-item">
+                <img class="search-icon" src="./assets/images/gbr.png" alt="search"> <span class="ml-10 fw-700">&#163; GBP</span>
+              </a>
+              <a href="#" class="navbar-item relative cartIcon">
+                <img class="bag-icon" src="./assets/images/blackbag.png" alt="cart/bag"><sup class="absolute sup-pink">6</sup>
+                <span class="ml-10">Your bag is: &#163;3.699</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar--pink" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid mx-20">
+          <div class="navbar-brand navbar-brand--white">
+            <a href="index.html" class="navbar-item">
+              Shopmate
+            </a>
+            <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+              data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="#" class="navbar-item">
+                Women
+              </a>
+              <a href="#" class="navbar-item">
+                Men
+              </a>
+              <a href="#" class="navbar-item">
+                Kids
+              </a>
+              <a href="#" class="navbar-item is-active">
+                Shoes
+              </a>
+              <a href="#" class="navbar-item">
+                Brands
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field search-field target-js">
+                  <input class="input input-search" type="text" placeholder="search anything">
+                  <img class="search-icon" src="./assets/images/search.png" alt="search">
+                  <img class="close-icon closeIcon" src="./assets/images/close.png" alt="search">
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="navbar-item">
+                <img class="search-icon" id="search-icon" src="./assets/images/search.png" alt="search">
+              </a>
+              <a href="#" class="navbar-item relative cartIcon">
+                <img class="bag-icon" src="./assets/images/bag.png" alt="cart/bag"><sup class="absolute sup-white">6</sup>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="cart target-js">
+      <div class="columns">
+        <div class="column pd-50">
+          <div class="space-between">
+            <h1 class="title is-5">4 Items In Your Cart</h1>
+            <div class="relative">
+              <span class="closeCart closeIcon pointer fs-24">&#9587;</span>
+            </div>
+          </div>
+          <div class="cart-table">
+            <table class="table table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Size</th>
+                  <th class="pl-10">Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;34.99</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;60</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-start">
+                      <div class="item-image b-1">
+                        <img class="img-fluid-50" src="./assets/images/images-shirt8.png" alt="shirt">
+                      </div>
+                      <div class="item-details ml-10">
+                        <span class="fw-700 fs-18">Green T-Shirt 2019</span>
+                        <span class="flex-col mt-10 gray">Men BK3569</span><br>
+                        <span class="remove-item"><span class="pink mt-10 fw-600 fs-14">x</span> <span class="ml-5 fs-10">Remove</span></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="flex-col mt-40">XXL</span>
+                  </td>
+                  <td>
+                    <div class="flex-col">
+                      <div class="flex-start mt-35">
+                        <div class="value-operator">-</div>
+                        <div class="output-count ml-20">2</div>
+                        <div class="value-operator ml-20">+</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="fw-600 mt-40"><span class="flex-col mt-40">&#163;30</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="space-between">
+          <a href="index.html" class="btn btn-block btn-white btn-rounded">Back to Shop</a>
+          <button class="btn btn-block btn-pink btn-rounded">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <section class="section details">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6">
+            <div class="current-item">
+              <img class="img-fluid-85" id="image-container" src="./assets/images/images-shirt13.png" alt="shirt">
+              <div>
+                <div class="justify-center">
+                  <div class="ml-5">
+                    <img onclick="changeImage(this)" class="img-fluid-50 b-1-pink" src="./assets/images/images-shirt13.png" alt="shirt">
+                  </div>
+                  <div class="ml-5">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt9.png" alt="shirt">
+                  </div>
+                  <div class="ml-5">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt5.png" alt="shirt">
+                  </div>
+                  <div class="ml-5">
+                    <img onclick="changeImage(this)" class="img-fluid-50" src="./assets/images/images-shirt13.png" alt="shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="details-info">
+              <div class="flex-start">
+                <a class="dark-gray" href="index.html">Home .</a>
+                <a class="ml-10 dark-gray" href="index.html">All Categories .</a>
+                <a class="ml-10 dark-gray" href="index.html">Men's Clothing & Accessories</a>
+              </div>
+            </div>
+            <div class="ratings flex-start py-10">
+              <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+              <span>&#9734;</span>
+            </div>
+            <h1 class="title is-3">Super Oversized T-Shirt With Raw Sleeve In Brown</h1>
+            <h1 class="title is-5 pink">&#163;14.99</h1>
+            <div>
+              <h1 class="fw-700 dark-gray mt-20 pb-20">Color</h1>
+              <div class="space-start ml-5">
+                <div class="custom-radios">
+                  <div class="inline-block">
+                    <input type="radio" id="red" name="color" value="red" checked>
+                    <label for="red">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="purple" name="color" value="purple">
+                    <label for="purple">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="green2" name="color" value="green2">
+                    <label for="green2">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="yellow" name="color" value="yellow">
+                    <label for="yellow">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="blue" name="color" value="blue">
+                    <label for="blue">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="pink" name="color" value="pink">
+                    <label for="pink">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="inline-block">
+                    <input type="radio" id="green1" name="color" value="green1">
+                    <label for="green1">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-between">
+              <h1 class="fw-700 dark-gray mt-20 pb-20">Size</h1>
+              <a href="#" class="pink mt-20">Style Guide</a>
+            </div>
+            <div class="selectgroup selectgroup-squares pb-10">
+              <label class="selectgroup-item">
+                <input type="radio" name="value" value="XS" class="selectgroup-input">
+                <span class="selectgroup-button">XS</span>
+              </label>
+              <label class="selectgroup-item">
+                <input type="radio" name="value" value="S" class="selectgroup-input">
+                <span class="selectgroup-button">S</span>
+              </label>
+              <label class="selectgroup-item">
+                <input type="radio" name="value" value="M" class="selectgroup-input">
+                <span class="selectgroup-button">M</span>
+              </label>
+              <label class="selectgroup-item">
+                <input type="radio" name="value" value="L" class="selectgroup-input" checked="">
+                <span class="selectgroup-button">L</span>
+              </label>
+              <label class="selectgroup-item">
+                <input type="radio" name="value" value="XL" class="selectgroup-input">
+                <span class="selectgroup-button">XL</span>
+              </label>
+            </div>
+            <h1 class="fw-700 dark-gray mt-20 pb-20">Quantity</h1>
+            <div class="flex-start">
+              <div class="value-operator">-</div>
+              <div class="output-count ml-20">2</div>
+              <div class="value-operator ml-20">+</div>
+            </div>
+            <div class="space-between mt-40">
+              <button class="btn btn-pink btn-block btn-rounded">Add to cart</button>
+              <span class="pink mt-10 pointer">
+                <img src="./assets/images/heart.png" class="heart-icon-small" alt="heart">
+                Add to Wish List
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section details bg-light__grey">
+      <div class="container">
+        <div class="bb-1 py-20">
+          <h1 class="title is-4">Products review</h1>
+          <div class="columns">
+            <div class="column is-4">
+              <div class="comment-details">
+                <div class="ratings flex-start">
+                  <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                  <span>&#9734;</span>
+                </div>
+                <div class="comment flex-col mt-20">
+                  <span class="fw-700">Pablo Permins</span>
+                  <span class="fs-14 light-gray">one hour ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-8">
+              <div class="review-message">
+                <p class="review-text fs-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                  repellendus illum
+                  fugit deserunt, provident ipsam explicabo consequatur quam quae nisi exercitationem pariatur! Quisquam
+                  corporis
+                  iusto dolorum reiciendis porro, fuga molestias dicta in voluptatum! Sunt doloremque illum error nostrum
+                  voluptate corporis.</p>
+                <div class="flex-start mt-10">
+                  <div class="likes flex-start">
+                    <div class="emoji pointer">&#128155;</div>
+                    <div class="ml-5">112</div>
+                  </div>
+                  <div class="ml-30 comment-count flex-start">
+                    <div class="emoji pointer">&#128172;</div>
+                    <div class="ml-5">113</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="columns">
+            <div class="column is-12">
+              <div class="add-review py-40">
+                <h1 class="title is-4">Add a review</h1>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label pr-40">Choose a name</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded w-200">
+                        <input class="input" type="text">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label pr-40">Your review</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea class="textarea"></textarea>
+                      </div>
+                      <span class="fs-12 pt-10">your review must be at least up to 50 characters <a href="#" class="pink">Full
+                          review guildlines</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label pr-40">Overall rating</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="ratings flex-start mt-5 pointer">
+                      <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                      <span>&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label"></div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control pointer">
+                        <button class="btn btn-block btn-pink btn-rounded">
+                          Send message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h1 class="title is-4">You may also like</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="item-card">
+            <div class="card-overlay">
+              <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
+              <button class="btn item-card__btn mt-40">Quick View</button>
+            </div>
+            <div class="item-card__image">
+              <img class="img-fluid-80" src="./assets/images/images-shirt5.png" alt="shirt">
+            </div>
+            <div class="status-tag">Hot</div>
+            <h2 class="item-card__title">Men's knitwear offer</h2>
+            <div class="justify-center">
+              <button class="btn item-card__btn">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="item-card">
+            <div class="card-overlay">
+              <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
+              <button class="btn item-card__btn mt-40">Quick View</button>
+            </div>
+            <div class="item-card__image">
+              <img class="img-fluid-73" src="./assets/images/images-shirt9.png" alt="shirt">
+            </div>
+            <h2 class="item-card__title">Men's knitwear offer</h2>
+            <span class="justify-center">&#163;14.99</span>
+            <div class="justify-center">
+              <div class="space-start ml-10 mt-10">
+                <div class="custom-radios">
+                  <div class="inline-block">
+                    <input type="radio" id="red" name="color" value="red" checked>
+                    <label for="red">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="purple" name="color" value="purple">
+                    <label for="purple">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="green2" name="color" value="green2">
+                    <label for="green2">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                
+                  <div class="inline-block">
+                    <input type="radio" id="green1" name="color" value="green1">
+                    <label for="green1">
+                      <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="item-card">
+            <div class="card-overlay">
+              <div class="heart-icon"><img src="./assets/images/heart.png" alt="heart"></div>
+              <button class="btn item-card__btn mt-40">Quick View</button>
+            </div>
+            <h2 class="item-card__title">Men's knitwear offer</h2>
+            <div class="item-card__image">
+              <img class="img-fluid-80" src="./assets/images/images-shirt7.png" alt="shirt">
+            </div>
+            <h2 class="item-card__title pink">From &#163;4.99</h2>
+          </div>
+        </div>
+        <div class="column">
+          <div class="item-card">
+            <div class="card-overlay">
+              <h2 class="item-card__title">Men's knitwear offer</h2>
+              <span class="item-card__price mt-10">&#163;14.99</span>
+              <div class="justify-center mt-20">
+                <div class="space-start ml-10">
+                  <div class="custom-radios">
+                    <div class="inline-block">
+                      <input type="radio" id="red" name="color" value="red" checked>
+                      <label for="red">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="purple" name="color" value="purple">
+                      <label for="purple">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="green2" name="color" value="green2">
+                      <label for="green2">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  
+                    <div class="inline-block">
+                      <input type="radio" id="green1" name="color" value="green1">
+                      <label for="green1">
+                        <span>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content mt-40">
+                <div class="select is-rounded w-100">
+                  <select>
+                    <option>Size</option>
+                    <option>With options</option>
+                  </select>
+                </div>
+                <button class="btn item-card__btn">Buy Now</button>
+              </div>
+              <div class="justify-content mt-60">
+                <img class="heart-icon-small" src="./assets/images/heart.png" alt="heart">
+                <span>Add to wishlist</span>
+              </div>
+            </div>
+            <div class="item-card__image">
+              <img class="img-fluid-73" src="./assets/images/images-shirt5.png" alt="shirt">
+            </div>
+            <h2 class="item-card__title">Men's knitwear offer</h2>
+            <div class="justify-center">
+              <button class="btn item-card__btn">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer bg-white">
+      <div class="container">
+        <div class="space-between">
+          <a class="has-text-dark fw-700" href="#">Women</a>
+          <a class="has-text-dark fw-700" href="#">Men</a>
+          <a class="has-text-dark fw-700" href="#">Kids</a>
+          <a class="has-text-dark fw-700" href="#">Shoes</a>
+          <a class="has-text-dark fw-700" href="#">Brand</a>
+        </div>
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column">
+            <div class="socials">
+              <div class="space-between">
+                <div class="social-icons bg-mild__grey">
+                  <a class="social-link" href="#">
+                    <img src="./assets/images/logo-instagram.svg" class="social-icon">
+                  </a>
+                </div>
+                <div class="social-icons bg-mild__grey">
+                  <a class="social-link" href="#">
+                    <img src="./assets/images/logo-pinterest.svg" class="social-icon">
+                  </a>
+                </div>
+                <div class="social-icons bg-mild__grey">
+                  <a class="social-link" href="#">
+                    <img src="./assets/images/logo-facebook.svg" class="social-icon">
+                  </a>
+                </div>
+                <div class="social-icons bg-mild__grey">
+                  <a class="social-link" href="#">
+                    <img src="./assets/images/logo-twitter.svg" class="social-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="privacy mt-40">
+              <span class="dark-gray">&copy; 2019 shopmate Ltd.</span>
+              <span><a class="ml-5 dark-gray" href="#">Contact</a></span>
+              <span><a class="ml-5 dark-gray" href="#">Privacy Policy</a></span>
+            </div>
+          </div>
+          <div class="column"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="authModal signin target-js">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="closeBtn closeIcon">&times;</span>
+        <h2 class="title is-5">Log in</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input is-medium" type="email" placeholder="your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input is-medium" type="password" placeholder="password">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end modal body-->
+      <div class="modal-footer">
+        <button class="btn btn-block btn-rounded btn-pink m-20">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="authModal signup target-js">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="closeBtn closeIcon">&times;</span>
+        <h2 class="title is-5">Create Account</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input is-medium" type="text" placeholder="your name">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input is-medium" type="email" placeholder="your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input is-medium" type="password" placeholder="password">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end modal body-->
+      <div class="modal-footer">
+        <button class="btn btn-block btn-rounded btn-pink m-20">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

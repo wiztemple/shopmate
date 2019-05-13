@@ -1,0 +1,140 @@
+/*navbar styles*/
+.topnav > .navbar-start, .topnav > .navbar-end {
+  font-size: 0.9375rem;
+  font-weight: $fw-700;
+}
+.navbar--pink {
+  height: 4.375rem;
+  font-family: $family-sans-serif;
+  background-color: $color-pink;
+  font-weight: $fw-700;
+
+  .navbar-brand--white > a{
+    font-size: 1.5625rem;
+    color:$color-white;
+    text-transform: uppercase;
+    font-weight: $fw-700;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar--pink {
+    height: 3.125rem;
+    overflow-x: hidden;
+  }
+}
+
+.navbar .navbar-brand--white > a.navbar-item:hover, .navbar .navbar-brand--white > a.navbar-item.is-active,
+.navbar .navbar--pink .navbar-link:hover,
+.navbar .navbar-brand--white .navbar-link.is-active {
+  background-color: transparent;
+  color: $color-white;
+}
+
+.navbar--pink  .navbar-start > a.navbar-item, .navbar--pink .navbar-start > a.navbar-item.is-active,
+  .navbar--pink  .navbar-start .navbar-link,
+  .navbar--pink  .navbar-start .navbar-link.is-active,
+  .navbar--pink .navbar-end > a.navbar-item,
+  .navbar--pink  .navbar-end > a.navbar-item.is-active,
+  .navbar--pink .navbar-end .navbar-link,
+  .navbar--pink  .navbar-end .navbar-link.is-active {
+    background-color: $transparent;
+    color: $color-white;
+  }
+  .navbar--pink  .navbar-start > a.navbar-item:hover, .navbar--pink .navbar-start > a.navbar-item.is-active,
+  .navbar--pink  .navbar-start .navbar-link:hover,
+  .navbar--pink .navbar-start .navbar-link.is-active,
+  .navbar--pink  .navbar-end > a.navbar-item:hover,
+  .navbar--pink  .navbar-end > a.navbar-item.is-active,
+  .navbar--pink .navbar-end .navbar-link:hover,
+  .navbar--pink  .navbar-end .navbar-link.is-active {
+    color: $color-light-grey;
+    transition: all .2s ease-out;
+  }
+.navbar--light  .navbar-start > a.navbar-item:hover, .navbar--light  .navbar-end > a.navbar-item:hover {
+   color: $color-black;
+   background-color: transparent;
+}
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.bag-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.close-icon {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.heart-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.heart-icon-small{
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+
+/*search*/
+.search-field {
+  display: none;
+  width: 18.75rem;
+  position: relative;
+  transition: 1s ease-in;
+}
+.search-field > .search-icon {
+  position: absolute;
+  top: .6rem;
+  left: .5rem;
+}
+.search-field > .close-icon {
+  position: absolute;
+  top: .8rem;
+  right: .5rem;
+}
+.input-search {
+  padding: 1.25rem 1.25rem 1.25rem 1.875rem;
+  color: $color-white;
+  font-size: .75rem;
+  font-weight: 600;
+  border-radius: 1.875rem;
+  border: none;
+  background-color: rgba(255,255,255,0.5);
+}
+.input-search::placeholder {
+  font-family: $family-sans-serif;
+  padding-left: 1.875rem;
+  color: $color-white;
+  font-size: .9375rem;
+  font-weight: 600;
+}
+.input-search:focus {
+  outline: $transparent;
+}
+
+/*superscript*/
+sup {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: .625rem;
+  height: .625rem;
+  bottom: 1.5625rem;
+  left: 1.25rem;
+  padding: .625rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.sup-pink {
+  color: $color-white;
+  background-color: $color-pink;
+}
+.sup-white {
+  top: 1.25rem;
+  color: $color-pink;
+  background-color: $color-white;
+}
