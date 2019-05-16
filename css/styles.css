@@ -7278,18 +7278,18 @@ body {
   line-height: 1.5;
   border-radius: .25rem; }
 
-.btn-rounded {
+.btn--rounded {
   border-radius: 1.875rem; }
 
-.btn-block {
+.btn--block {
   padding: 0.625rem 1.875rem; }
 
-.btn-pink {
+.btn--pink {
   color: #fff;
   background-color: #f62f5e;
   box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2); }
 
-.btn-white {
+.btn--white {
   color: #f62f5e;
   background-color: #fff;
   box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2); }
@@ -7311,13 +7311,13 @@ body {
   margin-top: 1.25rem;
   box-shadow: 0 0.0625rem 0.0625rem 0 rgba(46, 46, 46, 0.2); }
 
-.leftside-item {
+.leftside__item {
   display: block;
   position: relative;
   background-color: #fff;
   border-bottom: 0.0625rem solid #b4b4b4; }
 
-.leftside-item:nth-child(1) {
+.leftside__item:nth-child(1) {
   background-color: #f7f7f7; }
 
 /*selectgroup*/
@@ -7686,22 +7686,22 @@ body {
   overflow: auto;
   background-color: rgba(46, 46, 46, 0.7); }
 
-.modal-header {
+.modal__header {
   position: relative;
   padding: 10px;
   border-radius: 10px; }
 
-.modal-header > span {
+.modal__header > span {
   position: absolute;
   top: 5px;
   right: 10px; }
 
-.modal-header > h2 {
+.modal__header > h2 {
   padding-left: .625rem;
   color: #2e2e2e;
   font-weight: 400; }
 
-.modal-content {
+.modal__content {
   border-radius: 0.625rem;
   background-color: #fff;
   width: 30%;
@@ -7710,7 +7710,7 @@ body {
   animation-name: modalopen;
   animation-duration: 1s; }
 
-.modal-body {
+.modal__body {
   padding: 1.25rem; }
 
 .closeBtn {
@@ -7978,7 +7978,7 @@ sup {
     left: 0;
     overflow-x: scroll; } }
 
-.cart-footer {
+.cart__footer {
   padding: 0.625rem 3.125rem 0.625rem 3.125rem;
   background-color: #f7f7f7; }
 

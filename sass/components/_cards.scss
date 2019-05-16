@@ -4,13 +4,13 @@
   margin-top: 1.25rem;
   box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
 }
-.leftside-item {
+.leftside__item {
   display: block;
   position: relative;
   background-color: $color-white;
   border-bottom: 0.0625rem solid $color-light-grey;
 }
-.leftside-item:nth-child(1) {
+.leftside__item:nth-child(1) {
   background-color: $feint-grey;
 }
 

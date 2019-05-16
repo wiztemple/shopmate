@@ -12,18 +12,18 @@
   line-height: 1.5;
   border-radius: .25rem;
 }
-.btn-rounded {
+.btn--rounded {
   border-radius: 1.875rem;
 }
-.btn-block {
+.btn--block {
   padding: 0.625rem 1.875rem;
 }
-.btn-pink {
+.btn--pink {
   color: $color-white;
   background-color: $color-pink;
   box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);
 }
-.btn-white {
+.btn--white {
   color: $color-pink;
   background-color: $color-white;
   box-shadow:0 0.0625rem 0.0625rem 0 rgba($color-black,0.2);

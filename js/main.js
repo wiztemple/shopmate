@@ -53,6 +53,7 @@ const displayCart = () => cart.style.display = 'block';
 [...closeIcons].map((closeIcon) => {
   closeIcon.addEventListener('click', () => {
     const div = closeIcon.closest('.target-js');
+    
     div.style.display = 'none';
   });
 });
